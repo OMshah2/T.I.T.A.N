@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Plan Options</title>
+  <style>
+    /* General body styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #E0E0E0;
+    }
+
+    /* Header and Navigation */
+    header {
+      background-color: #1E1E1E;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #FFD700;
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #E0E0E0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #FFD700;
+      color: #121212;
+    }
+
+    /* Main content area */
+    .main-content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #1E1E1E;
+      border-radius: 8px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: #E0E0E0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-top: 15px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #B0B0B0;
+    }
+
+    .card .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 15px;
+      color: #FFD700;
+    }
+
+    .card .learn-more,
+    .card .get-started {
+      display: block;
+      background-color: #FFD700;
+      color: #121212;
+      padding: 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .card .learn-more:hover,
+    .card .get-started:hover {
+      background-color: #FFA500;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #1E1E1E;
+      color: #B0B0B0;
+      text-align: center;
+      padding: 15px 20px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #FFA500;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header>
+    <h1>Your Plan Options</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#plans">Pricing</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content: Pricing plans -->
+  <div class="main-content" id="plans">
+    <h2>Choose Your Plan</h2>
+    <div class="card-container">
+      <!-- Free Plan Card -->
+      <div class="card">
+        <img src="path_to_image_1.jpg" alt="Free Plan Image">
+        <h3>Free Plan</h3>
+        <p class="price">$0</p>
+        <p>Time: 1 hour per day</p>
+        <p>Included: Windows app, Web search, Image generation & more.</p>
+        <a href="#" class="learn-more">Learn More</a>
+        <a href="#" class="get-started">Get Started</a>
+      </div>
+
+      <!-- Premium Plan Card -->
+      <div class="card">
+        <img src="path_to_image_2.jpg" alt="Premium Plan Image">
+        <h3>Premium Plan</h3>
+        <p class="price">$15 per month</p>
+        <p>Time: unlimited</p>
+        <p>Included: Windows app, Web search, Image generation, voice commands to open apps, mobile app, etc.</p>
+        <a href="#" class="learn-more">Learn More</a>
+        <a href="#" class="get-started">Get Started</a>
+      </div>
+
+      <!-- Business Plan Card -->
+      <div class="card">
+        
+        <h3>Business Plan</h3>
+        <p class="price">$10 per person, per month</p>
+        <p>Time: unlimited</p>
+        <p>Included: All premium features, Ability to add 6 people to plan, and to use commercial-grade AI.</p>
+        <a href="#" class="learn-more">Learn More</a>
+        <a href="#" class="get-started">Get Started</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+    </p>
+  </footer>
+</body>
+</html>

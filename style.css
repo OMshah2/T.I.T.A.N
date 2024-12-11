@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #312828;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #3a3737;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: green; /* Black background */
+  color: white; /* White text */
+  padding: 14px 32px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Change color when the dropdown button is hovered */
+.dropbtn:hover {
+  background-color: #444;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(60, 61, 3); /* Black background */
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 8px;
+}
+img {
+  border: 2px solid rgb(230, 236, 236); /* thick white border */
+  border-radius: 20px; 
+  border-bottom: 11px solid white;     /* round corners */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #fff9f9; /* White text */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links when hovered */
+.dropdown-content a:hover {
+  background-color: #444; /* Darker black on hover */
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* For the fixed "Menu" button at the top */
+.dropdown {
+  position: fixed;   /* Keeps it fixed while scrolling */
+  top: 11px;
+  left: 11px;
+  z-index: 1000;      /* Makes sure it stays on top of other elements */
+  background-color: #333;
+}
+
+
+/* Flex container to arrange buttons vertically */
+.vertical-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;   /* Adjust space between image and buttons */
+}
+
+.vertical-buttons .dropdown-container {
+  margin-bottom: 20px;
+  width: 200px;        /* Adjust width for the buttons */
+}
